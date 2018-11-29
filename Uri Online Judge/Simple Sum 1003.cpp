@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<cstdio>
 
 using namespace std;
 
@@ -7,6 +7,6 @@ int main(){
 	scanf("%d %d",&a,&b);
 	SOMA = a+b;
 	printf("SOMA = %d\n",SOMA);
-		
+	
 	return 0;
 }

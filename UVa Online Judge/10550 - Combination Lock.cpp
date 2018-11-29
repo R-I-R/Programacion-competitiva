@@ -2,16 +2,13 @@
 
 int main(){
 	
-	unsigned int a,b,c,d;	
+	int x1,x2,x3,x4;	
 	
-	while(scanf("%d %d %d %d", &a, &b, &c, &d), (a||b||c||d)){
+	while(scanf("%d %d %d %d", &x1, &x2, &x3, &x4), (x1||x2||x3||x4)){
 		
-		int suma = 80;
+		int suma = 120;
 		
-		suma += 40-a-b;
-		suma += 40;
-		suma += b-c;
-		suma += 40-c-d;
+		suma += ((x1 > x2) ? x1-x2: 40-(x2-x1)) + ((x2 > x3) ? 40-(x2-x3): x3-x2) + ((x3 > x4) ? x3-x4: 40-(x4-x3));
 		
 		printf("%d\n",suma*9);
 	}
